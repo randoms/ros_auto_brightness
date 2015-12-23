@@ -53,7 +53,6 @@ def calculateBrightness(image):
         return
     else:
         imageCount = 0
-    res = [0]*(len(image.data)/3)
     mcolor = [ord(value) for value in image.data]
     res = sum(mcolor)/len(mcolor)
     # 每10s执行一次
